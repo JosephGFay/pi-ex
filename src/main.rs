@@ -6,4 +6,5 @@ fn main() {
     println!("Pin Set");
     buzzer_pin.set_high().expect("Failed to set high");
     println!("Program finished without issue.");
+    // COMMMMMMMENTS
 }
