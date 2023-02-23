@@ -10,6 +10,6 @@ fn main() {
 // on_time: 2 seconds and off_time: 3 seconds
 
 
-    led.on();
+    led.off();
     println!("Blinked");
 }
