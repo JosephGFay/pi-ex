@@ -1,6 +1,6 @@
 import os
 
-os.system("git pull pi")
+os.system("git pull pi master")
 
 os.system("cargo build")
 
