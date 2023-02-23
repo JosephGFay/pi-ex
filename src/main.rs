@@ -1,10 +1,10 @@
-use gpio::{GpioIn, GpioOut};
+use rust_gpiozero::*;
 
 fn main() {
-    println!("Starting pi-ex");
-    let mut buzzer_pin = gpio::sysfs::SysFsGpioOutput::open(36).unwrap();
-    println!("Pin Set");
-    buzzer_pin.set_high().expect("Failed to set high");
-    println!("Program finished without issue.");
-    // COMMMMMMMENTS
+    // Create a new LED attached to Pin 17
+    let mut led = LED::new(3);
+
+// blink the LED
+// on_time: 2 seconds and off_time: 3 seconds
+    led.blink(2.0,3.0);
 }
