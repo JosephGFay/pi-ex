@@ -3,7 +3,7 @@ use rust_gpiozero::*;
 fn main() {
     println!("Starting blind software..");
     // Create a new LED attached to Pin 17
-    let mut led = LED::new(4);
+    let mut led = LED::new(7);
 
 // blink the LED
 // on_time: 2 seconds and off_time: 3 seconds
