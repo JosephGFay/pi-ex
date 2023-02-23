@@ -1,3 +1,4 @@
+extern crate rust_gpiozero;
 use rust_gpiozero::*;
 
 fn main() {
@@ -9,6 +10,6 @@ fn main() {
 // on_time: 2 seconds and off_time: 3 seconds
 
 
-    led.blink(2.0,3.0);
+    led.on();
     println!("Blinked");
 }
