@@ -11,5 +11,6 @@ fn main() {
 
 
     led.blink(0.2, 0.3);
+    led.set_blink_count(10);
     println!("Blink ran");
 }
